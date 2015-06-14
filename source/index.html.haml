@@ -1,7 +1,14 @@
 ---
 title: Welcome to Prospxt
 ---
-
 %nav
-  = link_to '/' do
-    = image_tag 'http://placehold.it/150x20'
+  .wrapper
+    = link_to '/' do
+      = image_tag 'http://placehold.it/150x20'
+
+%section.hero
+  %article
+    .wrapper
+      %h1 Accelerate early traction
+      %h2 We help startups generate new users faster and cheaper.
+      = link_to 'Start for free', '#', class: 'button'
