@@ -1,2 +1,2 @@
 # prospxt
-prospext webapp
+This is the prospxt webapp.
