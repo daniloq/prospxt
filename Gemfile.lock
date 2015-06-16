@@ -36,6 +36,7 @@ GEM
     eventmachine (1.0.7)
     execjs (2.5.2)
     ffi (1.9.8)
+    flutie (2.0.0)
     haml (4.0.6)
       tilt
     hike (1.2.3)
@@ -130,6 +131,7 @@ PLATFORMS
 
 DEPENDENCIES
   bourbon
+  flutie
   middleman (~> 3.3.10)
   middleman-livereload (~> 3.1.0)
   neat

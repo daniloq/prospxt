@@ -1,17 +1,8 @@
 ---
 title: Welcome to Prospxt
 ---
-%nav
-  .wrapper
-    = link_to '/' do
-      = image_tag 'images/prospxt.png'
-    %ul
-      %li
-        = link_to 'Features', 'features.html'
-      %li
-        = link_to 'Pricing', 'pricing.html'
-      %li
-        = link_to 'Contact', 'contact.html'
+
+= partial 'refills/nav'
 
 %section.hero
   %article
@@ -59,15 +50,4 @@ title: Welcome to Prospxt
         100% in 30 days.
       = link_to 'Start for free', '#', class: 'button secondary'
 
-%footer.footer
-  %ul
-    %li
-      &copy; 2015 Prospxt &nbsp; &nbsp; &#124; &nbsp;
-    %li
-      = link_to 'Features', 'features.html'
-    %li
-      = link_to 'Pricing', 'pricing.html'
-    %li
-      = link_to 'Contact', 'contact.html'
-    %li
-      = link_to '@prospxt', '#'
+= partial 'refills/footer'
