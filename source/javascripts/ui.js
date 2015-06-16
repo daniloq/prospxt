@@ -15,3 +15,15 @@ $(function() {
     }
   });
 });
+// Tabs
+jQuery(function() {
+  jQuery('.tab').click(function() {
+    jQuery('.content').fadeOut(1000);
+    jQuery('#tab' + $(this).attr('target')).fadeIn(1000);
+    return false;
+  });
+  $('.tab').click(function() {
+    $('a.active').not(this).removeClass('active');
+    $(this).toggleClass('active');
+  });
+});
