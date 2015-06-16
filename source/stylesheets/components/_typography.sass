@@ -32,6 +32,9 @@ h5
 
 a
   color: $green
+  +transition(all .3s ease-in-out)
+  &:hover
+    color: darken($green, 5%)
 
 ul
   margin: 0

@@ -4,7 +4,14 @@ title: Welcome to Prospxt
 %nav
   .wrapper
     = link_to '/' do
-      = image_tag 'http://placehold.it/150x20'
+      = image_tag 'images/prospxt.png'
+    %ul
+      %li
+        = link_to 'Features', 'features.html'
+      %li
+        = link_to 'Pricing', 'pricing.html'
+      %li
+        = link_to 'Contact', 'contact.html'
 
 %section.hero
   %article
@@ -13,27 +20,54 @@ title: Welcome to Prospxt
       %h2 We help startups generate new users faster and cheaper.
       = link_to 'Start for free', '#', class: 'button'
       %figure
-        .circle
-          %i.ion-ios-arrow-down
+        = link_to '#how' do
+          .circle
+            %i.ion-ios-arrow-down
 
-%section.how
+%section#how.how
   %article
     .wrapper
       %h3 We generate leads, sign ups, and opportunities.
-      %h4 Here's how it works:
       %ul
         %li
-          = image_tag 'http://placehold.it/300x150'
+          .icon-box
+            %i.ion-chatboxes
           %h5 Sign up free
           Tell us about your company.
         %li
-          = image_tag 'http://placehold.it/300x150'
+          .icon-box
+            %i.ion-android-navigate
           %h5 Set your target
           Tell us about your customer.
         %li
-          = image_tag 'http://placehold.it/300x150'
+          .icon-box
+            %i.ion-android-contacts
           %h5 Grow smarter
           We'll deliver qualified leads and sign ups.
-      %h4
-        Flexible, pay as you go pricing.
-        = link_to 'See pricing', '#'
+      .divider-container
+        .divider
+          %h4
+            Flexible, pay as you go pricing.
+            = link_to 'See pricing', '#'
+
+%section.testimonial
+  %article
+    .wrapper
+      %h3
+        Breezy HR grew
+        %br
+        100% in 30 days.
+      = link_to 'Start for free', '#', class: 'button secondary'
+
+%footer.footer
+  %ul
+    %li
+      &copy; 2015 Prospxt &nbsp; &nbsp; &#124; &nbsp;
+    %li
+      = link_to 'Features', 'features.html'
+    %li
+      = link_to 'Pricing', 'pricing.html'
+    %li
+      = link_to 'Contact', 'contact.html'
+    %li
+      = link_to '@prospxt', '#'

@@ -1,7 +1,23 @@
 nav
-  position: fixed
+  position: absolute
   width: 100%
   background: transparent
-  top: 0
+  top: rem(30)
   left: 0
   right: 0
+  z-index: 1
+  img
+    height: rem(35)
+  ul
+    margin: 0
+    float: right
+    li
+      display: inline-block
+      a
+        color: white
+        margin: 0 rem(15)
+        text-decoration: none
+        font:
+          family: 'Lato', sans-serif
+        &:hover
+          color: darken($green, 10%)
