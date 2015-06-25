@@ -14,6 +14,12 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
+    <div class="app-wrapper">
+      <%= partial 'refills/nav' %>
+      <div class='app-content'>
+        <%= yield %>
+      </div>
+      <%= partial 'refills/footer' %>
+    </div>
   </body>
 </html>

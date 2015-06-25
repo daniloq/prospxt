@@ -1,5 +1,15 @@
+.app-wrapper
+  min-height: 100%
+  position: relative
+
+.app-content
+  padding-bottom: rem(55)
+
 .wrapper
   +outer-container
+  padding: 0 rem(15)
+  +media($medium)
+    padding: 0
 
 .hero
   background: url('/images/hero.jpg') left center
