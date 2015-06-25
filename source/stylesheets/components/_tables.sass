@@ -4,4 +4,17 @@ table.app-table
     tr
       th
         text-align: left
+  tbody
+    border: rem(1) solid lighten($light-gray, 35%)
+    tr
+      td
         border-bottom: rem(1) solid lighten($light-gray, 35%)
+        border-right: rem(1) solid lighten($light-gray, 35%)
+        padding: rem(10)
+        &:last-of-type
+          border-right: none
+        &.active
+          border-left: rem(5) solid $green
+      &:last-child
+        td
+          border-bottom: none

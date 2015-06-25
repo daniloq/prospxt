@@ -2,18 +2,61 @@
 title: Prospxt | Dashboard
 ---
 %section.dashboard
-  .wrapper
-    %article
+  %article.overlay
+    %div
+      %h2 We're building yout list. You are currently, 43 in line. Jump to the top when you do one of the following:
+      %ul
+        %li
+          Tweet
+        %li
+          = link_to 'Tweet Us', '#', class: 'button'
+      %ul
+        %li
+          Add your credit card
+        %li
+          = link_to 'Tweet Us', '#', class: 'button'
+      %ul
+        %li
+          Complete your profile
+        %li
+          = link_to 'Tweet Us', '#', class: 'button'
+      %ul
+        %li
+          Install our chrome extension
+        %li
+          = link_to 'Tweet Us', '#', class: 'button'
+
+
+  %article
+    .wrapper
       %header
-        %h2 Dashboard
+        %h5 Dashboard
       %table.app-table
-        %thead
-          %tr
-            -8.times do
-              %th
-                Stuff
+        -# %thead
+        -#   %tr
+        -#     -8.times do
+        -#       %th
+        -#         Stuff
         %tbody
-          -10.times do
+          %tr
+            %td.active
+              %input{type: 'checkbox'}
+            %td
+              = image_tag '#'
+              %span Christopher Brodt
+            %td
+              icon
+            %td
+              7 minutes ago
+            %td
+              5 months ago
+            %td
+              16 days ago
+            %td
+              693
+            %td
+              Danilo Quilaton
+          -9.times do
             %tr
               %td
                 %input{type: 'checkbox'}
