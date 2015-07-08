@@ -1,10 +1,27 @@
 .tabs-container
-  border-radius: rem(12)
-  background: $light-gray
-  border: rem(1) solid $gray
-  -webkit-box-shadow: 0 rem(4) rem(13) rem(-1) rgba(0,0,0,0.47)
-  -moz-box-shadow: 0 rem(4) rem(13) rem(-1) rgba(0,0,0,0.47)
-  box-shadow: 0 rem(4) rem(13) rem(-1) rgba(0,0,0,0.47)
+  margin-bottom: rem(150)
+  ul
+    list-style: none
+    margin: rem(60) 0
+    padding: 0
+    +clearfix
+    li
+      display: inline-block
+      text-align: center
+      border-bottom: solid white rem(2)
+      padding: rem(15) 0
+      +span-columns(4)
+      a
+        text-decoration: none
+        color: lighten(#646464, 10%)
+        border-radius: rem(1000)
+        background: lighten(#646464, 55%)
+        padding: rem(5) rem(20)
+        &.tab.active
+          background: transparent
+          border-radius: 0
+          color: darken($green, 15%)
+          border-bottom: solid $green rem(2)
   +media($medium)
-    +span-columns(6)
-    +shift(3)
+    +span-columns(8)
+    +shift(2)
