@@ -1,12 +1,46 @@
 .pricing
   article
+    +clearfix
+    h2
+      text-align: center
+      color: $gray
+      font:
+        size: rem(36)
+        family: 'Lato', sans-serif
+        weight: 700
+      margin: rem(30) 0
     dl
       margin: 0
       padding: 0
+      display: table
+      width: 100%
+      height: 100%
+      min-height: 100vh
       dd
         margin: 0
-        padding: 0
-        display: inline-block
-        text-align: center
-        +media($medium)
-          +span-columns(6)
+        padding: 15% 0 0 0
+        display: table-cell
+        vertical-align: top
+        text-align: left
+        width: 50%
+        h3
+          font:
+            size: rem(30)
+            weight: 400
+        h5
+          font-size: rem(100)
+          color: darken($green, 20%)
+        p
+          font-size: rem(20)
+          line-height: rem(35)
+        &:nth-of-type(2)
+          border-left: rem(1) solid lighten($light-gray, 35%)
+          padding: 15% 0 0 rem(120)
+        .button
+          font-size: rem(18)
+          margin: rem(30) auto
+          height: rem(55)
+          line-height: rem(55)
+          padding: 0 rem(60)
+        // +media($medium)
+        //   +span-columns(6)
