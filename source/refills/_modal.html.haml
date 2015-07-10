@@ -1,0 +1,19 @@
+.ui.modal.small
+  %i.close.icon
+  .content
+    %h5 Create your account
+    %form
+      %label First Name
+      %input{type: 'text'}
+      %label Last Name
+      %input{type: 'text'}
+      %label Company Name
+      %input{type: 'text'}
+      %label Company Email
+      %input{type: 'email'}
+      %label Password
+      %input{type: 'password'}
+:javascript
+  $('.ui.modal')
+    .modal('attach events', '.modal-btn', 'show')
+  ;
