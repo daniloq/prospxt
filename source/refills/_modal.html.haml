@@ -1,19 +1,49 @@
-.ui.modal.small
+-# Step 1
+.ui.first.modal.coupled.small
   %i.close.icon
   .content
     %h5 Create your account
     %form
-      %label First Name
-      %input{type: 'text'}
-      %label Last Name
-      %input{type: 'text'}
+      %ul.inline
+        %li
+          %label First Name
+          %input{type: 'text'}
+        %li
+          %label Last Name
+          %input{type: 'text'}
       %label Company Name
       %input{type: 'text'}
       %label Company Email
       %input{type: 'email'}
       %label Password
       %input{type: 'password'}
+    = link_to 'Next', '#', class: 'ui  next-modal-btn button'
+
+-# Step 2
+.ui.second.modal.coupled.small
+  %i.close.icon
+  .content
+    %h5 Who do you want to reach with Prospxt?
+    %p Fill out all that apply.
+    %form
+      %label Company Size
+      %input{type: 'text'}
+      %label Specific Company
+      %input{type: 'text'}
+      %label Location
+      %input{type: 'text'}
+      %label Industry
+      %input{type: 'text'}
+      %label Technology
+      %input{type: 'text'}
+      %label Description Summary
+      %textarea
+      %input{type: 'submit', value: 'Finish', class: 'button'}
+
 :javascript
-  $('.ui.modal')
+  $('.ui.first.modal')
     .modal('attach events', '.modal-btn', 'show')
+  ;
+  $('.ui.second.modal')
+    .modal('attach events', '.next-modal-btn', 'show')
   ;
