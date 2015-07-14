@@ -17,9 +17,14 @@ $(function() {
 });
 // Tabs
 jQuery(function() {
+  // jQuery('.tab').click(function() {
+  //   jQuery('.content').fadeOut(1000);
+  //   jQuery('#tab' + $(this).attr('target')).fadeIn(1000);
+  //   return false;
+  // });
   jQuery('.tab').click(function() {
-    jQuery('.content').fadeOut(1000);
-    jQuery('#tab' + $(this).attr('target')).fadeIn(1000);
+    jQuery('.content').animate({opacity: 0});
+    jQuery('#tab' + $(this).attr('target')).animate({opacity: 1});
     return false;
   });
   $('.tab').click(function() {

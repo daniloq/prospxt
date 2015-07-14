@@ -119,8 +119,9 @@
     font-size: rem(21)
 
 .features
-  padding: rem(150) 0 rem(230) 0
+  padding: rem(150) 0
   border-top: rem(1) solid lighten($light-gray, 30%)
+  +clearfix
   div
     img
       width: rem(150)
@@ -128,15 +129,22 @@
     text-align: center
     font:
       size: rem(42)
+  p
+    border-bottom: rem(1) solid lighten($light-gray, 30%)
+    padding-bottom: rem(80)
   dl
     +media($medium)
       +span-columns(4)
     dt
       color: $gray
-      font-size: rem(18)
-      margin: 0 0 rem(5) 0
+      font:
+        size: rem(18)
+        weight: 600
+      margin: rem(15) 0
     dd
       margin: 0 0 rem(15) 0
+      line-height: rem(25)
+      color: lighten($light-gray, 15%)
 
 .testimonial
   background: url('/images/hero2.jpg') top center
