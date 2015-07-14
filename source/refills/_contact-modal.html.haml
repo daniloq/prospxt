@@ -1,0 +1,16 @@
+.ui.contact.modal.small
+  %i.close.icon
+  .content
+    /[if lte IE 8]
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+    %script{:charset => "utf-8", :src => "//js.hsforms.net/forms/v2.js", :type => "text/javascript"}
+
+:javascript
+  $('.ui.contact.modal')
+    .modal('attach events', '.contact-btn', 'show')
+  ;
+  hbspt.forms.create({
+    css: '',
+    portalId: '677457',
+    formId: '41eed040-b8cf-4fc5-a3ac-7732edda6ebf'
+  });

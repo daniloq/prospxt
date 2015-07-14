@@ -1,0 +1,16 @@
+.ui.signup.modal.small
+  %i.close.icon
+  .content
+    /[if lte IE 8]
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+    %script{:charset => "utf-8", :src => "//js.hsforms.net/forms/v2.js", :type => "text/javascript"}
+
+:javascript
+  $('.ui.signup.modal')
+    .modal('attach events', '.signup-btn', 'show')
+  ;
+  hbspt.forms.create({
+    css: '',
+    portalId: '677457',
+    formId: '71da404d-6984-498c-8fb6-384acd566663'
+  });
