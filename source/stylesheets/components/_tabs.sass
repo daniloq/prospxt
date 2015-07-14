@@ -1,5 +1,8 @@
 .tabs-container
   margin-bottom: rem(150)
+  // +media($medium)
+  //   +span-columns(10)
+  //   +shift(1)
   ul
     list-style: none
     margin: rem(60) 0
@@ -22,6 +25,21 @@
           border-radius: 0
           color: darken($green, 15%)
           border-bottom: solid $green rem(2)
-  +media($medium)
-    +span-columns(8)
-    +shift(2)
+  .content
+    figure
+      margin: 0
+      &:nth-of-type(1)
+        +media($medium)
+          +span-columns(8)
+      &:nth-of-type(2)
+        +media($medium)
+          +span-columns(4)
+      img
+        width: 100%
+      h4
+        font:
+          size: rem(32)
+      p
+        font:
+          size: rem(20)
+        line-height: rem(35)
