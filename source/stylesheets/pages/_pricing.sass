@@ -3,46 +3,45 @@
   // height: auto
   // width: 100%
   // background-size: cover
+  h2
+    background: #e1e1e1
+    text-align: center
+    color: darken($gray, 30%)
+    font:
+      size: rem(36)
+      family: 'Lato', sans-serif
+      weight: 700
+    padding: rem(60) 0 rem(120) 0
+    margin: 0
   article
     +clearfix
-    h2
-      text-align: center
-      color: $gray
-      font:
-        size: rem(36)
-        family: 'Lato', sans-serif
-        weight: 700
-      margin: rem(30) 0
     dl
       margin: 0
-      padding: 0
-      display: table
-      width: 100%
-      height: 100%
-      min-height: 100vh
+      padding: 0 0 rem(90) 0
       dd
         margin: 0
-        padding: 15% 0 0 0
-        display: table-cell
         vertical-align: top
         text-align: left
-        width: 50%
+        border: rem(2) darken(#e1e1e1, 10%) solid
+        padding: rem(45) rem(90)
+        margin: rem(-60) auto rem(0) auto
+        background: white
+        display: inline-block
+        +media($medium)
+          +span-columns(6)
         h3
           font:
             size: rem(30)
             weight: 400
         h5
-          font-size: rem(100)
+          font-size: rem(42)
           color: darken($green, 20%)
         p
           font-size: rem(20)
           line-height: rem(35)
-        &:nth-of-type(2)
-          border-left: rem(1) solid lighten($light-gray, 35%)
-          padding: 15% 0 0 rem(120)
         .button
           font-size: rem(18)
-          margin: rem(30) auto
+          margin: rem(30) auto 0 auto
           height: rem(55)
           line-height: rem(55)
           padding: 0 rem(60)
