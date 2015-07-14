@@ -19,25 +19,21 @@ title: Welcome to Prospxt
       %h3 We generate leads, sign ups, and opportunities.
       %ul
         %li
-          .icon-box
-            %i.ion-chatboxes
+          = image_tag 'images/icon-1.png'
           %h5 Sign up free
           Tell us about your company.
         %li
-          .icon-box
-            %i.ion-android-navigate
+          = image_tag 'images/icon-4.png'
           %h5 Set your target
           Tell us about your customer.
         %li
-          .icon-box
-            %i.ion-android-contacts
+          = image_tag 'images/icon-3.png'
           %h5 Grow smarter
           We'll deliver qualified leads and sign ups.
       .divider-container
-        .divider
-          %h4
-            Flexible, pay as you go pricing.
-            = link_to 'See pricing', '#'
+        %h4
+          Flexible, pay as you go pricing.
+        = link_to 'See pricing', '#', class: 'button'
 
 %section#features.features
   %article
@@ -52,23 +48,21 @@ title: Welcome to Prospxt
           %li
             = link_to 'Promotion', '#', class: 'tab', target: '3'
         #tab1.content
-          %div
-            = image_tag 'images/icon-4.png'
-          %h4 Get accurate, customziable leads delivered to your inbox or CRM as often as you like.
-          %p We research and provide customized contacts based on your growth goals, product and target audience. Leads are unique to your business.
-          %dl
-            %dt Custom research
-            %dd Our blend of tech and people, build custom contact lists on the fly.
-          %dl
-            %dt Plug &amp; play data
-            %dd Data is imported to any CRM or automation tool as often as you need new contacts.
-          %dl
-            %dt Pay as you go
-            %dd Plans are built for scrapp startups and emerging enterprises, who need flexibility.
-
+          %figure
+            %h4 Get accurate, customziable leads delivered to your inbox or CRM as often as you like.
+            %p We research and provide customized contacts based on your growth goals, product and target audience. Leads are unique to your business.
+            %dl
+              %dt Custom research
+              %dd Our blend of tech and people, build custom contact lists on the fly.
+            %dl
+              %dt Plug &amp; play data
+              %dd Data is imported to any CRM or automation tool as often as you need new contacts.
+            %dl
+              %dt Pay as you go
+              %dd Plans are built for scrapp startups and emerging enterprises, who need flexibility.
+          %figure
+            = image_tag 'http://placekitten.com/g/900/900'
         #tab2.content{style: 'display:none'}
-          %div
-            = image_tag 'images/icon-3.png'
           %h4 Accelerate awareness, inbound traffic and thought leadership with content in the right places.
           %p Referral traffic is the cheapest acquistion channel in the game. We plan, develop and distribute your content to the right channels.
           %dl
@@ -82,8 +76,6 @@ title: Welcome to Prospxt
             %dd Analytics provide insights to potpimize value props, sales cycle and product fit.
 
         #tab3.content{style: 'display:none'}
-          %div
-            = image_tag 'images/icon-2.png'  
           %h4 We accelerate revenue and build early traction with turnkey sales development services.
           %p Cold prospecting is the most time consuming but cost effective growth strategy. We scale your outbound lead gen process faster than hiring.
           %dl

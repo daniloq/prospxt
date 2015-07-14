@@ -57,6 +57,9 @@
 .how
   text-align: center
   padding: rem(90) 0
+  h3
+    font:
+      size: rem(42)
   h5
     margin: rem(30) 0 rem(5) 0
   ul
@@ -64,15 +67,8 @@
   li
     +media($medium)
       +span-columns(4)
-    &:nth-of-type(1)
-      .icon-box
-        background: $blue
-    &:nth-of-type(2)
-      .icon-box
-        background: $orange
-    &:nth-of-type(3)
-      .icon-box
-        background: $purple
+    img
+      max-width: rem(150)
 
 
 .divider-container
@@ -80,6 +76,15 @@
   display: table
   width: 100%
   position: relative
+  h4
+    margin: rem(150) 0 rem(30) 0
+    font:
+      size: rem(36)
+  .button
+    height: rem(45)
+    font:
+      size: rem(18)
+    line-height: rem(45)
 
 .divider
   display: table-cell
@@ -117,11 +122,11 @@
   padding-top: rem(120)
   border-top: rem(1) solid lighten($light-gray, 30%)
   div
-    text-align: center
     img
       width: rem(150)
   h3
-    text-align: center
+    font:
+      size: rem(42)
   dl
     +media($medium)
       +span-columns(4)
