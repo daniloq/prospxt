@@ -13,8 +13,10 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The Middleman" %></title>
 
-    <%= stylesheet_link_tag "normalize", "all", "//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" %>
-    <%= javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js", "all" %>
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900|Karma' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag "normalize", "all", "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" %>
+    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js", "all" %>
   </head>
 
   <body class="<%= page_classes %>">
